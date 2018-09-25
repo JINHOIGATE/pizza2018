@@ -1,3 +1,13 @@
 language: ruby
 rvm:
 - 2.4.4
+deploy:
+  provider: heroku
+  api_key:
+    secure: UpuxRJGUGEC06gXphfO6sqCbZ/z+6XOJeD8Dqn5emFvobTJw4Pa7EF3wc15iGcyxavXxhbcJ0+FE4BDgTud7NIxjbtZUzxy1+HxTfiR22w346YRLFqhHuBwOyalH1t4bM0SloRH1MXh5Hs2y/CEkbbmLlc7o6GaDv5NzR61GdkfsyX4+8w5R2EtPXMdNznoP6BpFmp0xant+Vup92AJ/QiI2eRuaLrUyur8NKIPNe+a62j+d2eDo8Ohioxz4kW6tWig80lBXA08fsuvQa6C08mupEQTO4wt20PqWCF7+lrQU4SkB+t0Mc4i1rsBrRTMr/iCPomImKsFrzfUCQD5mBEeYQJARp65gzf0CumxMP1/77ySHGNBGnsD1MTj976PCD3C4Y6L4qm/9oR3h/8KRswc9qIHBD7ZIFD6g3i2//uQV+plSkjUBZiKBCH4/EhmFi8wUeUmoFcmq5pM73SM4PUF1PUdnPT85xIaRnxnlw0rpL9qeehDXBJqE7GZuVojdbFqmXczOhjbUe7Bo5955DdZNZ03TYbINw1lz1J5swBkrOb9sMVhT4Z8iGM3avfVZer0aPwf67vF1Qlw3aB34DnIxB38lltD84645KTJdlzby1KJ3aCvg8wobXtLYkEN0fRPKRluYNHtGAw52s+7RY10Oez2fOnQ1LGflwRDhxtw=
+  app: pizza2018
+  on:
+    repo: JINHOIGATE/pizza2018
+   run:
+     - "rake db:migrate"
+     
