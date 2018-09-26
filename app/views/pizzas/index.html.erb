@@ -17,7 +17,8 @@
       <tr>
         <td><%= pizza.name %></td>
         <td><%= pizza.price %></td>
-        <td><%= pizza.url %></td>
+        <img src="http://www.pizza-time.fr/pizza-lille-livraison/" alt="image d'une pizza" align="left">
+        <!--<td><%= pizza.url %></td>-->
         <td><%= link_to 'Show', pizza %></td>
         <td><%= link_to 'Edit', edit_pizza_path(pizza) %></td>
         <td><%= link_to 'Destroy', pizza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
